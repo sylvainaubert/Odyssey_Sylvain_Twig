@@ -7,4 +7,4 @@ $twig = new \Twig\Environment($loader);
 
 $products = ['Ours', 'Orignal', 'Caribou', 'Tétra', 'Carcajou'];
 
-echo $twig->render('index.html.twig');
+echo $twig->render('index.html.twig', ['products' => $products]);
