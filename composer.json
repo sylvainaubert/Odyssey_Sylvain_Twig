@@ -1,0 +1,7 @@
+{
+    "name": "sylvainaubert/odyssey_sylvain_twig",
+    "description": "Projet Quête Twig",
+    "require": {
+        "twig/twig": "^2.7"
+    }
+}
