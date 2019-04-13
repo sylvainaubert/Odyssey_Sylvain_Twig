@@ -1,0 +1,13 @@
+h1{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-header{
+    color: #dd4444;
+    text-transform: uppercase;
+}
