@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <title>première utilisation de Twig</title>
+{% endblock %}
+
+{% block header %}
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">My twig</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produits
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Ours</a>
+                            <a class="dropdown-item" href="#">Orignal</a>
+                            <a class="dropdown-item" href="#">Caribou</a>
+                            <a class="dropdown-item" href="#">Tétra</a>
+                            <a class="dropdown-item" href="#">Carcajou</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="text-center"> Mon premier Twig</h1>
+
+    </header>
+
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="container">
+        <div class="row">
+
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            {{ product }}
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Le {{ product }} est un super animal</p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+
+
+    </div>
+
+{% endblock %}

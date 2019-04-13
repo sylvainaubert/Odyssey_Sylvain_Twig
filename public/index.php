@@ -2,9 +2,9 @@
 
 require '../vendor/autoload.php';
 
-$products = ['Ours', 'Orignal', 'Caribou', 'Tétra', 'Carcajou'];
-
-$loader = new \Twig\Loader\FilesystemLoader('/../src/View');
+$loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../src/View');
 $twig = new \Twig\Environment($loader);
+
+$products = ['Ours', 'Orignal', 'Caribou', 'Tétra', 'Carcajou'];
 
 echo $twig->render('index.html.twig');
